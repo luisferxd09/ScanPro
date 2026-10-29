@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0b1e"/><stop offset=".55" stop-color="#1d1650"/><stop offset="1" stop-color="#2a1640"/></linearGradient>
+<linearGradient id="tx" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#c7bbff"/><stop offset="1" stop-color="#f3c0dc"/></linearGradient>
+<radialGradient id="glow" cx=".28" cy=".5" r=".45"><stop offset="0" stop-color="#8c7cf7" stop-opacity=".55"/><stop offset="1" stop-color="#8c7cf7" stop-opacity="0"/></radialGradient>
+<linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<clipPath id="c"><rect width="900" height="260" rx="28"/></clipPath>
+</defs>
+<g clip-path="url(#c)">
+<rect width="900" height="260" fill="url(#bg)"/><rect width="900" height="260" fill="url(#glow)"/>
+<rect x="-300" y="0" width="240" height="260" fill="url(#shine)" transform="skewX(-20)"><animate attributeName="x" from="-300" to="1200" dur="4s" repeatCount="indefinite"/></rect>
+<text x="250" y="168" text-anchor="middle" font-size="150" font-weight="900" fill="url(#tx)" letter-spacing="-4">10</text>
+<text x="250" y="222" text-anchor="middle" font-size="26" font-weight="800" fill="#c7bbff" letter-spacing="10">DÍAS</text>
+<line x1="470" y1="50" x2="470" y2="210" stroke="#c7bbff" stroke-opacity=".25" stroke-width="2"/>
+<text x="510" y="78" font-size="20" font-weight="800" fill="#f3c0dc" letter-spacing="6">PRÓXIMAMENTE · BETA</text>
+<text x="510" y="132" font-size="46" font-weight="900" fill="#ffffff" letter-spacing="-1">ScanPro 1.4.0</text>
+<text x="510" y="174" font-size="21" font-weight="600" fill="#e2dbff">Sale el 8 de noviembre de 2026</text>
+<text x="510" y="208" font-size="18" font-weight="600" fill="#a99fd6">Y muy pronto en Google Play</text>
+<circle cx="860" cy="40" r="6" fill="#f3c0dc"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+</g></svg>

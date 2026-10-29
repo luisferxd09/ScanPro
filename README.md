@@ -21,6 +21,20 @@
 
 </div>
 
+<!--PROX-->
+<div align="center">
+
+## 🚀 Próximamente: ScanPro 1.4.0
+
+<img src="countdown.svg" alt="Cuenta regresiva para ScanPro 1.4.0" width="100%">
+
+**Estamos en beta.** La versión 1.4.0 se publica sola aquí el **8 de noviembre de 2026**, y muy pronto llegará a **Google Play**.
+
+✍️ Firmar y anotar · 📝 Editor Word y PDF · 🔍 PDF con búsqueda · 🔒 PDF con contraseña · 📥 Importar PDF · ☁️ Copia en Google Drive · 🇬🇧 English
+
+</div>
+<!--/PROX-->
+
 <br>
 
 ## 📱 Así se ve
@@ -130,7 +144,7 @@
 |:---:|:---|
 | 📴 | **Funciona sin internet**: la app completa y el OCR van dentro del APK |
 | 🏠 | Tus fotos y documentos **nunca salen de tu teléfono** |
-| 🙅 | **Sin cuentas, sin anuncios, sin analítica** |
+| 🙅 | **Sin cuentas ni analítica**; a veces, un anuncio breve al exportar |
 | 📷 | La cámara solo se enciende cuando tocas **«Tomar foto»** |
 
 </div>
@@ -165,6 +179,22 @@ Lo encuentras en **[Actions](../../actions)** › la última compilación › **
 ## 📝 Novedades
 
 <details open>
+<summary><b>v1.4.0</b> · Firmar, editar, PDF con búsqueda y mucho más · 🔜 Próximamente (8 de noviembre)</summary>
+
+- ✍️ **Firmar y anotar** páginas: firma con el dedo, texto, resaltador y lápiz
+- 📝 **Editor de texto**: abre y guarda **Word (.docx)** o PDF
+- 🔍 **PDF con búsqueda**: el texto OCR va dentro del PDF (se puede buscar y copiar)
+- 🔒 **PDF con contraseña** y **límite de tamaño** (1, 2 o 5 MB) para portales de trámites
+- 📥 **Importar PDF** y **«Abrir con ScanPro»** desde WhatsApp, Gmail o Archivos
+- ☁️ **Copia en Google Drive** con un toque y recordatorio de copia de seguridad
+- 🔊 **Sonidos** (respetan el modo silencio) y 🇬🇧 **English** disponible
+- ⭐ **ScanPro Pro**: pago único para quitar los anuncios
+- 📱 Android 16 (API 36), pantalla de borde a borde y gesto «atrás» predictivo
+- Un anuncio de Google **de vez en cuando** al exportar (nunca sin internet)
+
+</details>
+
+<details>
 <summary><b>v1.3.1</b> · Documento de identidad en una hoja</summary>
 
 - Nuevo modo **Documento de identidad**: fotografía el **frente** y el **reverso** de tu cédula, DNI o licencia y ScanPro los une en **una sola hoja**, como una fotocopia
