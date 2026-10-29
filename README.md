@@ -4,7 +4,7 @@
 
 <br>
 
-[![Versión](https://img.shields.io/badge/versión-1.3.0-8c7cf7?style=for-the-badge)](../../releases/latest)
+[![Versión](https://img.shields.io/badge/versión-1.3.1-8c7cf7?style=for-the-badge)](../../releases/latest)
 [![Android](https://img.shields.io/badge/Android-7.0+-f3c0dc?style=for-the-badge&logo=android&logoColor=white)](../../releases/latest)
 [![Sin internet](https://img.shields.io/badge/funciona-sin_internet-ffd6bf?style=for-the-badge&logo=wifi&logoColor=white)](#-privacidad)
 [![OCR](https://img.shields.io/badge/OCR-español-c7bbff?style=for-the-badge)](#-lo-que-puede-hacer)
@@ -51,6 +51,7 @@
 - **Captura automática** cuando la hoja está quieta y enfocada
 - **Elige el mejor lente** del teléfono para documentos
 - Avisa si la foto salió **borrosa** y endereza las hojas **de lado**
+- **Documento de identidad**: frente y reverso de la cédula, DNI o licencia en **una sola hoja**, a tamaño real
 
 </td>
 <td width="50%" valign="top">
@@ -164,6 +165,18 @@ Lo encuentras en **[Actions](../../actions)** › la última compilación › **
 ## 📝 Novedades
 
 <details open>
+<summary><b>v1.3.1</b> · Documento de identidad en una hoja</summary>
+
+- Nuevo modo **Documento de identidad**: fotografía el **frente** y el **reverso** de tu cédula, DNI o licencia y ScanPro los une en **una sola hoja**, como una fotocopia
+- **Tamaño real** (85,6 × 54 mm) en hoja **Carta** o **A4**, o **ampliado ×1,5** para que se lea mejor
+- **Guía en la cámara** con la forma de la tarjeta y aviso de qué cara sigue
+- **Vista previa** de la hoja antes de guardar; cada cara se puede recortar o editar
+- Al exportar a PDF se elige la misma hoja **sin márgenes**: imprime al 100 % y sale del tamaño original
+- Acceso directo **«Cédula»** en el inicio y en Herramientas
+
+</details>
+
+<details>
 <summary><b>v1.3.0</b> · App Android nativa</summary>
 
 - La app completa va **dentro del APK**: funciona **sin internet** y sin navegador
