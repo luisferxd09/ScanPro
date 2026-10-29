@@ -1,0 +1,41 @@
+name: Compilar APK
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Descomprimir proyecto
+        run: |
+          mkdir proyecto
+          unzip -q *.zip -d proyecto
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Incluir OCR sin conexion
+        working-directory: proyecto
+        run: bash scripts/fetch-ocr.sh
+
+      - name: Compilar
+        working-directory: proyecto
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon --stacktrace
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ScanPro-apk
+          path: proyecto/app/build/outputs/apk/release/app-release.apk
+          if-no-files-found: error
