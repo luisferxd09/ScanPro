@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/banner.png" alt="ScanPro — Escáner de documentos para Android" width="100%">
+<img src="banner.png" alt="ScanPro — Escáner de documentos para Android" width="100%">
 
 <br>
 
@@ -28,11 +28,11 @@
 <div align="center">
 <table>
   <tr>
-    <td align="center"><img src="docs/inicio.jpg" width="170"><br><sub><b>Inicio</b></sub></td>
-    <td align="center"><img src="docs/camara.jpg" width="170"><br><sub><b>Encuadre automático</b></sub></td>
-    <td align="center"><img src="docs/filtros.jpg" width="170"><br><sub><b>Filtros</b></sub></td>
-    <td align="center"><img src="docs/documento.jpg" width="170"><br><sub><b>Tu documento</b></sub></td>
-    <td align="center"><img src="docs/herramientas.jpg" width="170"><br><sub><b>Herramientas</b></sub></td>
+    <td align="center"><img src="inicio.jpg" width="170"><br><sub><b>Inicio</b></sub></td>
+    <td align="center"><img src="camara.jpg" width="170"><br><sub><b>Encuadre automático</b></sub></td>
+    <td align="center"><img src="filtros.jpg" width="170"><br><sub><b>Filtros</b></sub></td>
+    <td align="center"><img src="documento.jpg" width="170"><br><sub><b>Tu documento</b></sub></td>
+    <td align="center"><img src="herramientas.jpg" width="170"><br><sub><b>Herramientas</b></sub></td>
   </tr>
 </table>
 </div>
@@ -196,7 +196,7 @@ Lo encuentras en **[Actions](../../actions)** › la última compilación › **
 
 <div align="center">
 
-<img src="docs/logo.png" width="64" alt="">
+<img src="logo.png" width="64" alt="">
 
 **ScanPro** · hecho con 💜 en Colombia
 
