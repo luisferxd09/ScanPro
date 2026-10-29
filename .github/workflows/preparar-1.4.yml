@@ -1,0 +1,63 @@
+name: Preparar 1.4.0 (privado)
+
+# Compila la 1.4.0 desde el borrador privado del release y deja el APK allí, sin publicarlo.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/preparar-1.4.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: '1.4.0'
+    steps:
+      - name: Descargar el proyecto 1.4.0 del borrador
+        run: |
+          gh release download "$TAG" -R "$GITHUB_REPOSITORY" -p 'scanprov2-android-1.4.0.zip'
+          mkdir proyecto
+          unzip -q scanprov2-android-1.4.0.zip -d proyecto
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Incluir OCR y lector de PDF sin conexion
+        working-directory: proyecto
+        run: bash scripts/fetch-ocr.sh
+
+      - name: Clave de subida a Google Play (secreto opcional)
+        env:
+          UPLOAD_KEYSTORE_B64: ${{ secrets.UPLOAD_KEYSTORE_B64 }}
+        run: |
+          if [ -n "$UPLOAD_KEYSTORE_B64" ]; then
+            echo "$UPLOAD_KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/upload.jks"
+            echo "UPLOAD_KEYSTORE_FILE=$RUNNER_TEMP/upload.jks" >> "$GITHUB_ENV"
+          fi
+
+      - name: Compilar APK (y AAB para Google Play)
+        working-directory: proyecto
+        env:
+          UPLOAD_KEYSTORE_PASSWORD: ${{ secrets.UPLOAD_KEYSTORE_PASSWORD }}
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon --stacktrace
+          cp app/build/outputs/apk/release/app-release.apk "$GITHUB_WORKSPACE/ScanPro-$TAG.apk"
+          if [ -n "$UPLOAD_KEYSTORE_FILE" ]; then
+            ./gradlew bundleRelease -PplayUpload --no-daemon
+            cp app/build/outputs/bundle/release/app-release.aab "$GITHUB_WORKSPACE/ScanPro-$TAG-play.aab"
+          fi
+
+      - name: Guardar en el borrador (sigue privado)
+        run: |
+          gh release upload "$TAG" -R "$GITHUB_REPOSITORY" ScanPro-$TAG*.apk ScanPro-$TAG*.aab --clobber 2>/dev/null || gh release upload "$TAG" -R "$GITHUB_REPOSITORY" "ScanPro-$TAG.apk" --clobber

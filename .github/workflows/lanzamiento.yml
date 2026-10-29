@@ -1,0 +1,52 @@
+name: Lanzamiento 1.4.0 (contador y publicación automática)
+
+on:
+  schedule:
+    - cron: '7 5 * * *'   # cada día a las 00:07 de Colombia
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: lanzamiento
+
+jobs:
+  diario:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: '1.4.0'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Calcular días que faltan
+        id: dia
+        run: node .github/scripts/contador.mjs
+
+      - name: Actualizar el contador del README
+        if: steps.dia.outputs.dias != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add countdown.svg
+          git diff --cached --quiet || { git commit -m "Contador: faltan ${{ steps.dia.outputs.dias }} días para ScanPro 1.4.0"; git push; }
+
+      - name: Publicar ScanPro 1.4.0
+        if: steps.dia.outputs.dias == '0'
+        run: |
+          if [ "$(gh release view "$TAG" --json isDraft -q .isDraft)" != "true" ]; then echo "La 1.4.0 ya está publicada."; exit 0; fi
+          ASSETS=$(gh release view "$TAG" --json assets -q '.assets[].name')
+          echo "$ASSETS" | grep -q '\.apk$' || { echo "::error::Falta el APK en el borrador. Ejecuta antes «Preparar 1.4.0 (privado)»."; exit 1; }
+          gh release download "$TAG" -p 'scanprov2-android-1.4.0.zip' -O scanprov2-android.zip --clobber
+          node .github/scripts/contador.mjs lanzar
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scanprov2-android.zip README.md countdown.svg
+          git commit -m "🎉 ScanPro 1.4.0 ya disponible"
+          git push
+          for a in $(echo "$ASSETS" | grep -E '\.aab$|\.zip$'); do gh release delete-asset "$TAG" "$a" -y; done
+          gh release edit "$TAG" --draft=false --latest --target main
