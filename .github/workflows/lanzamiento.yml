@@ -45,7 +45,7 @@ jobs:
           node .github/scripts/contador.mjs lanzar
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scanprov2-android.zip README.md countdown.svg
+          git add scanprov2-android.zip README*.md countdown.svg
           git commit -m "🎉 ScanPro 1.4.0 ya disponible"
           git push
           for a in $(echo "$ASSETS" | grep -E '\.aab$|\.zip$'); do gh release delete-asset "$TAG" "$a" -y; done
