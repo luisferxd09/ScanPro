@@ -13,7 +13,7 @@ if (process.argv[2] === 'lanzar') {
 
 <img src="countdown.svg" alt="ScanPro 1.4.0 ya disponible" width="100%">
 
-**Firmar y anotar · Editor Word y PDF · PDF con búsqueda y contraseña · Importar PDF · Copia en Google Drive · English**
+**Escáner de Google con IA · Herramientas de PDF · Firmar y tachar · Traducir · Carpetas de vida · Gastos e inventario · Más de 50 herramientas**
 
 <a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_Descargar_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="Descargar ScanPro 1.4.0" height="44"></a>
 
