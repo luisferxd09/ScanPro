@@ -1,7 +1,7 @@
 // Contador hasta el lanzamiento de ScanPro 1.4.0 (8 nov 2026, 00:00 hora de Colombia).
 // Uso: node contador.mjs            → actualiza countdown.svg y escribe dias=N en GITHUB_OUTPUT
 //      node contador.mjs lanzar     → deja el README en modo «ya disponible»
-import { writeFileSync, readFileSync, appendFileSync } from 'node:fs';
+import { writeFileSync, readFileSync, appendFileSync, readdirSync } from 'node:fs';
 const LANZAMIENTO = Date.UTC(2026, 10, 8, 5, 0, 0);
 const dias = Math.max(0, Math.ceil((LANZAMIENTO - Date.now()) / 86400000));
 if (process.argv[2] === 'lanzar') {
@@ -21,6 +21,11 @@ if (process.argv[2] === 'lanzar') {
 <!--/PROX-->`);
   r = r.replace('versión-1.3.1-8c7cf7', 'versión-1.4.0-8c7cf7').replace(' · 🔜 Próximamente (8 de noviembre)', '');
   writeFileSync('README.md', r);
+  // README en otros idiomas: el bloque «ya disponible» va guardado en <!--LISTO … LISTO-->
+  for (const f of readdirSync('.').filter(f => /^README\.[a-z]{2}\.md$/.test(f))) {
+    let x = readFileSync(f, 'utf8'); const m = x.match(/<!--LISTO\n([\s\S]*?)LISTO-->/);
+    if (m) writeFileSync(f, x.replace(/<!--PROX-->[\s\S]*?<!--\/PROX-->/, `<!--PROX-->\n${m[1]}<!--/PROX-->`));
+  }
   process.exit(0);
 }
 const listo = dias === 0, big = listo ? '¡YA!' : String(dias), unidad = listo ? 'disponible' : dias === 1 ? 'día' : 'días';
