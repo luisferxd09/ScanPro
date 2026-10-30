@@ -1,3 +1,7 @@
+<!--IDIOMAS-->
+<p align="center"><a href="README.md">🇪🇸 Español</a> · <a href="README.en.md">🇬🇧 English</a> · <a href="README.pt.md">🇧🇷 Português</a> · <a href="README.fr.md">🇫🇷 Français</a> · <a href="README.de.md">🇩🇪 Deutsch</a> · <a href="README.it.md">🇮🇹 Italiano</a> · <a href="README.zh.md">🇨🇳 中文</a> · <a href="README.hi.md">🇮🇳 हिन्दी</a> · <a href="README.id.md">🇮🇩 Indonesia</a> · <a href="README.ru.md">🇷🇺 Русский</a> · <a href="README.tr.md">🇹🇷 Türkçe</a> · <a href="README.vi.md">🇻🇳 Tiếng Việt</a> · <a href="README.ja.md">🇯🇵 日本語</a> · <a href="README.ko.md">🇰🇷 한국어</a> · <a href="README.ar.md">🇸🇦 العربية</a></p>
+<!--/IDIOMAS-->
+
 <div align="center">
 
 <img src="banner.png" alt="ScanPro — Escáner de documentos para Android" width="100%">
@@ -7,7 +11,7 @@
 [![Versión](https://img.shields.io/badge/versión-1.3.1-8c7cf7?style=for-the-badge)](../../releases/latest)
 [![Android](https://img.shields.io/badge/Android-7.0+-f3c0dc?style=for-the-badge&logo=android&logoColor=white)](../../releases/latest)
 [![Sin internet](https://img.shields.io/badge/funciona-sin_internet-ffd6bf?style=for-the-badge&logo=wifi&logoColor=white)](#-privacidad)
-[![OCR](https://img.shields.io/badge/OCR-español-c7bbff?style=for-the-badge)](#-lo-que-puede-hacer)
+[![Idiomas](https://img.shields.io/badge/idiomas-15-c7bbff?style=for-the-badge)](#-en-tu-idioma)
 
 ### Convierte papel en PDF nítidos en segundos 📄✨
 
@@ -30,7 +34,7 @@
 
 **Estamos en beta.** La versión 1.4.0 se publica sola aquí el **8 de noviembre de 2026**, y muy pronto llegará a **Google Play**.
 
-📷 Escáner de Google con IA · 📄 Dividir, comprimir y proteger PDF · ✍️ Firmar, tachar y sellar · 🌎 Traducir y leer en voz alta · 🗂️ Carpetas de vida con avisos de vencimiento · 💸 Gastos e inventario · 🎓 Resúmenes y tarjetas de estudio · 🖼️ Quitar el fondo y foto tipo documento · 🔐 Carpeta privada con huella · ¡y más de 50 herramientas!
+📷 Escáner de Google con IA · 📄 Dividir, comprimir y proteger PDF · ✍️ Firmar, tachar y sellar · 🌎 Traducir y leer en voz alta · 🗂️ Carpetas de vida con avisos de vencimiento · 💸 Gastos e inventario · 🎓 Resúmenes y tarjetas de estudio · 🖼️ Quitar el fondo y foto tipo documento · 🔐 Carpeta privada con huella · 🌍 15 idiomas · 👋 Pantalla «Hola» y guías paso a paso · ¡y más de 50 herramientas!
 
 </div>
 <!--/PROX-->
@@ -82,7 +86,7 @@
 <td width="50%" valign="top">
 
 ### 🔤 Leer texto
-- **OCR en español** (y español + inglés)
+- **OCR en muchos idiomas**: español, inglés, portugués, francés, alemán, italiano y más
 - Copia, comparte o guarda el texto como **TXT**
 - Busca documentos por las palabras que contienen
 
@@ -116,6 +120,15 @@
 </td>
 </tr>
 </table>
+
+<br>
+
+## 🌍 En tu idioma
+
+- La primera vez que abres la app te **saluda en muchos idiomas** («Hola», «Hello», «Olá»…), como un iPhone nuevo, y eliges **tu idioma y tu país**
+- **15 idiomas**: español, inglés, portugués, francés, alemán, italiano, chino, hindi, indonesio, ruso, turco, vietnamita, japonés, coreano y árabe (de derecha a izquierda)
+- Según el país cambian **fechas, moneda, tamaño de papel (carta o A4)**, el nombre del documento de identidad, los tamaños de foto y las plantillas de trámites
+- **Guías paso a paso** la primera vez que abres cada función, y **sonidos con vibración** al tocar
 
 <br>
 
@@ -163,7 +176,7 @@
 | App | TypeScript, sin frameworks, con su propio motor de imagen |
 | Procesado de imagen | Web Worker + OffscreenCanvas: detección de bordes, homografía, filtros |
 | Datos | IndexedDB, todo guardado en el teléfono |
-| OCR | Tesseract.js 5 (español e inglés), incluido en el APK |
+| OCR | Tesseract.js 5 (español, inglés, portugués, francés, alemán e italiano incluidos en el APK; otros idiomas se descargan una vez) |
 | PDF | Generador propio que inserta los JPG sin recomprimir |
 | Word | DOCX con imágenes y texto reconocido |
 | Android | Java + WebView, con los archivos servidos localmente (`WebViewAssetLoader`) |
@@ -187,7 +200,10 @@ Lo encuentras en **[Actions](../../actions)** › la última compilación › **
 - 🔒 **PDF con contraseña** y **límite de tamaño** (1, 2 o 5 MB) para portales de trámites
 - 📥 **Importar PDF** y **«Abrir con ScanPro»** desde WhatsApp, Gmail o Archivos
 - ☁️ **Copia en Google Drive** con un toque y recordatorio de copia de seguridad
-- 🔊 **Sonidos** (respetan el modo silencio) y 🇬🇧 **English** disponible
+- 🌍 **15 idiomas** con opciones por país, pantalla de bienvenida «Hola» y **guías paso a paso**
+- 🔊 **Más sonidos y vibración** al tocar (respetan el modo silencio)
+- 📥 Abre **Excel, PowerPoint, EPUB, ZIP, correos (.eml)**, HEIC, TIFF y más
+- 🧠 **Pregúntale a tus documentos**, revisar contratos, llenar formularios y orden automático
 - ⭐ **ScanPro Pro**: pago único para quitar los anuncios
 - 📱 Android 16 (API 36), pantalla de borde a borde y gesto «atrás» predictivo
 - Un anuncio de Google **de vez en cuando** al exportar (nunca sin internet)
