@@ -30,7 +30,7 @@
 
 **Estamos en beta.** La versión 1.4.0 se publica sola aquí el **8 de noviembre de 2026**, y muy pronto llegará a **Google Play**.
 
-✍️ Firmar y anotar · 📝 Editor Word y PDF · 🔍 PDF con búsqueda · 🔒 PDF con contraseña · 📥 Importar PDF · ☁️ Copia en Google Drive · 🇬🇧 English
+📷 Escáner de Google con IA · 📄 Dividir, comprimir y proteger PDF · ✍️ Firmar, tachar y sellar · 🌎 Traducir y leer en voz alta · 🗂️ Carpetas de vida con avisos de vencimiento · 💸 Gastos e inventario · 🎓 Resúmenes y tarjetas de estudio · 🖼️ Quitar el fondo y foto tipo documento · 🔐 Carpeta privada con huella · ¡y más de 50 herramientas!
 
 </div>
 <!--/PROX-->
