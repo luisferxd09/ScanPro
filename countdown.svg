@@ -9,7 +9,7 @@
 <g clip-path="url(#c)">
 <rect width="900" height="260" fill="url(#bg)"/><rect width="900" height="260" fill="url(#glow)"/>
 <rect x="-300" y="0" width="240" height="260" fill="url(#shine)" transform="skewX(-20)"><animate attributeName="x" from="-300" to="1200" dur="4s" repeatCount="indefinite"/></rect>
-<text x="250" y="168" text-anchor="middle" font-size="150" font-weight="900" fill="url(#tx)" letter-spacing="-4">9</text>
+<text x="250" y="168" text-anchor="middle" font-size="150" font-weight="900" fill="url(#tx)" letter-spacing="-4">8</text>
 <text x="250" y="222" text-anchor="middle" font-size="26" font-weight="800" fill="#c7bbff" letter-spacing="10">DÍAS</text>
 <line x1="470" y1="50" x2="470" y2="210" stroke="#c7bbff" stroke-opacity=".25" stroke-width="2"/>
 <text x="510" y="78" font-size="20" font-weight="800" fill="#f3c0dc" letter-spacing="6">PRÓXIMAMENTE · BETA</text>
