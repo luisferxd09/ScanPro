@@ -68,7 +68,11 @@
 
 <img src="countdown.svg" alt="ScanPro 1.4.0" width="100%">
 
-<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="44"></a>
+**오늘 무료로 다운로드** · 📷 Google AI 스캐너 · 🎡 VIP 룰렛 · 🔄 자동 업데이트 · 📄 PDF 도구 · 🖼️ 배경 제거 · 👋 15개 언어
+
+<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="52"></a>
+
+<sub>3단계 설치: APK 다운로드 → 열기 → «알 수 없는 앱 설치» 허용. 계정 없이 오프라인에서 작동합니다.</sub>
 
 </div>
 LISTO-->

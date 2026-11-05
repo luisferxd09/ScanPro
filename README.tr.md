@@ -68,7 +68,11 @@
 
 <img src="countdown.svg" alt="ScanPro 1.4.0" width="100%">
 
-<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="44"></a>
+**Bugün ücretsiz indirin** · 📷 Yapay zekâlı Google tarayıcı · 🎡 VIP çark · 🔄 Otomatik güncellemeler · 📄 PDF araçları · 🖼️ Arka planı silme · 👋 15 dil
+
+<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="52"></a>
+
+<sub>3 adımda kurulum: APK'yı indirin → açın → «Bilinmeyen uygulamaları yükle» iznini verin. Hesapsız ve internetsiz çalışır.</sub>
 
 </div>
 LISTO-->

@@ -68,7 +68,11 @@
 
 <img src="countdown.svg" alt="ScanPro 1.4.0" width="100%">
 
-<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="44"></a>
+**Download it free today** · 📷 Google AI scanner · 🎡 VIP roulette · 🔄 Automatic updates · 📄 PDF tools · 🖼️ Background remover · 👋 15 languages
+
+<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="52"></a>
+
+<sub>Install in 3 taps: download the APK → open it → allow “Install unknown apps”. No accounts and works offline.</sub>
 
 </div>
 LISTO-->

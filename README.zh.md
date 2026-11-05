@@ -68,7 +68,11 @@
 
 <img src="countdown.svg" alt="ScanPro 1.4.0" width="100%">
 
-<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="44"></a>
+**今天免费下载** · 📷 Google AI 扫描 · 🎡 VIP 转盘 · 🔄 自动更新 · 📄 PDF 工具 · 🖼️ 抠图去背景 · 👋 15 种语言
+
+<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="52"></a>
+
+<sub>三步安装：下载 APK → 打开 → 允许「安装未知应用」。无需账号，离线可用。</sub>
 
 </div>
 LISTO-->

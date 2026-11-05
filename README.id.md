@@ -68,7 +68,11 @@
 
 <img src="countdown.svg" alt="ScanPro 1.4.0" width="100%">
 
-<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="44"></a>
+**Unduh gratis hari ini** · 📷 Pemindai Google AI · 🎡 Roulette VIP · 🔄 Pembaruan otomatis · 📄 Alat PDF · 🖼️ Hapus latar belakang · 👋 15 bahasa
+
+<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="52"></a>
+
+<sub>Instalasi 3 langkah: unduh APK → buka → izinkan «Instal aplikasi tak dikenal». Tanpa akun dan berfungsi offline.</sub>
 
 </div>
 LISTO-->

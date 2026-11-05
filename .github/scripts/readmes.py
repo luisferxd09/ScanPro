@@ -5,6 +5,24 @@ R = pathlib.Path(__file__).resolve().parents[2]
 LANGS = [('es','🇪🇸','Español'),('en','🇬🇧','English'),('pt','🇧🇷','Português'),('fr','🇫🇷','Français'),('de','🇩🇪','Deutsch'),('it','🇮🇹','Italiano'),('zh','🇨🇳','中文'),('hi','🇮🇳','हिन्दी'),('id','🇮🇩','Indonesia'),('ru','🇷🇺','Русский'),('tr','🇹🇷','Türkçe'),('vi','🇻🇳','Tiếng Việt'),('ja','🇯🇵','日本語'),('ko','🇰🇷','한국어'),('ar','🇸🇦','العربية')]
 BAR = '<!--IDIOMAS-->\n<p align="center">' + ' · '.join(f'<a href="{"README.md" if c=="es" else f"README.{c}.md"}">{f} {n}</a>' for c,f,n in LANGS) + '</p>\n<!--/IDIOMAS-->'
 
+# bloque de lanzamiento por idioma: línea de novedades + nota de instalación
+L = {
+'en': ("**Download it free today** · 📷 Google AI scanner · 🎡 VIP roulette · 🔄 Automatic updates · 📄 PDF tools · 🖼️ Background remover · 👋 15 languages", "Install in 3 taps: download the APK → open it → allow “Install unknown apps”. No accounts and works offline."),
+'pt': ("**Baixe hoje grátis** · 📷 Scanner do Google com IA · 🎡 Roleta VIP · 🔄 Atualizações automáticas · 📄 Ferramentas de PDF · 🖼️ Remover fundo · 👋 15 idiomas", "Instalação em 3 toques: baixe o APK → abra → permita «Instalar apps desconhecidos». Sem contas e funciona sem internet."),
+'fr': ("**Téléchargez-la gratuitement** · 📷 Scanner Google avec IA · 🎡 Roulette VIP · 🔄 Mises à jour automatiques · 📄 Outils PDF · 🖼️ Suppression d'arrière-plan · 👋 15 langues", "Installation en 3 gestes : téléchargez l'APK → ouvrez-le → autorisez « Installer des applis inconnues ». Sans compte et fonctionne hors ligne."),
+'de': ("**Jetzt kostenlos laden** · 📷 Google-Scanner mit KI · 🎡 VIP-Glücksrad · 🔄 Automatische Updates · 📄 PDF-Werkzeuge · 🖼️ Hintergrund entfernen · 👋 15 Sprachen", "Installation in 3 Schritten: APK laden → öffnen → „Unbekannte Apps installieren“ erlauben. Ohne Konto und offline nutzbar."),
+'it': ("**Scaricala gratis oggi** · 📷 Scanner Google con IA · 🎡 Roulette VIP · 🔄 Aggiornamenti automatici · 📄 Strumenti PDF · 🖼️ Rimuovi sfondo · 👋 15 lingue", "Installazione in 3 passi: scarica l'APK → aprilo → consenti «Installa app sconosciute». Senza account e funziona offline."),
+'zh': ("**今天免费下载** · 📷 Google AI 扫描 · 🎡 VIP 转盘 · 🔄 自动更新 · 📄 PDF 工具 · 🖼️ 抠图去背景 · 👋 15 种语言", "三步安装：下载 APK → 打开 → 允许「安装未知应用」。无需账号，离线可用。"),
+'hi': ("**आज ही मुफ़्त डाउनलोड करें** · 📷 Google AI स्कैनर · 🎡 VIP रूलेट · 🔄 ऑटोमैटिक अपडेट · 📄 PDF टूल · 🖼️ बैकग्राउंड हटाएँ · 👋 15 भाषाएँ", "3 चरणों में इंस्टॉल करें: APK डाउनलोड करें → खोलें → \"अज्ञात ऐप इंस्टॉल करें\" की अनुमति दें। बिना खाता, बिना इंटरनेट काम करता है।"),
+'id': ("**Unduh gratis hari ini** · 📷 Pemindai Google AI · 🎡 Roulette VIP · 🔄 Pembaruan otomatis · 📄 Alat PDF · 🖼️ Hapus latar belakang · 👋 15 bahasa", "Instalasi 3 langkah: unduh APK → buka → izinkan «Instal aplikasi tak dikenal». Tanpa akun dan berfungsi offline."),
+'ru': ("**Скачайте бесплатно сегодня** · 📷 Сканер Google с ИИ · 🎡 VIP-рулетка · 🔄 Автообновления · 📄 Инструменты PDF · 🖼️ Удаление фона · 👋 15 языков", "Установка в 3 шага: скачайте APK → откройте → разрешите «Установку неизвестных приложений». Без аккаунтов и работает офлайн."),
+'tr': ("**Bugün ücretsiz indirin** · 📷 Yapay zekâlı Google tarayıcı · 🎡 VIP çark · 🔄 Otomatik güncellemeler · 📄 PDF araçları · 🖼️ Arka planı silme · 👋 15 dil", "3 adımda kurulum: APK'yı indirin → açın → «Bilinmeyen uygulamaları yükle» iznini verin. Hesapsız ve internetsiz çalışır."),
+'vi': ("**Tải miễn phí ngay hôm nay** · 📷 Máy quét Google AI · 🎡 Vòng quay VIP · 🔄 Tự động cập nhật · 📄 Công cụ PDF · 🖼️ Xóa nền · 👋 15 ngôn ngữ", "Cài đặt trong 3 bước: tải APK → mở ra → cho phép «Cài ứng dụng không rõ nguồn». Không cần tài khoản và hoạt động offline."),
+'ja': ("**今日すぐ無料ダウンロード** · 📷 Google の AI スキャナー · 🎡 VIP ルーレット · 🔄 自動アップデート · 📄 PDF ツール · 🖼️ 背景の削除 · 👋 15 言語", "3 ステップでインストール：APK をダウンロード → 開く →「不明なアプリのインストール」を許可。アカウント不要、オフラインで動作。"),
+'ko': ("**오늘 무료로 다운로드** · 📷 Google AI 스캐너 · 🎡 VIP 룰렛 · 🔄 자동 업데이트 · 📄 PDF 도구 · 🖼️ 배경 제거 · 👋 15개 언어", "3단계 설치: APK 다운로드 → 열기 → «알 수 없는 앱 설치» 허용. 계정 없이 오프라인에서 작동합니다."),
+'ar': ("**نزّلها مجانًا اليوم** · 📷 ماسح Google بالذكاء الاصطناعي · 🎡 عجلة VIP · 🔄 تحديثات تلقائية · 📄 أدوات PDF · 🖼️ إزالة الخلفية · 👋 15 لغة", "التثبيت في 3 خطوات: نزّل ملف APK → افتحه → اسمح بـ «تثبيت التطبيقات غير المعروفة». بلا حسابات ويعمل دون إنترنت."),
+}
+
 # tagline, sub, download, soon_h, soon_p, ready_h, feats_h, feats[10], install_h, steps[4], privacy_h, priv[4], made
 T = {
 'en': ["Turn paper into sharp PDFs in seconds 📄✨","Take the photo · ScanPro finds the page, straightens it and makes it look scanned.","Download APK","🚀 Coming soon: ScanPro 1.4.0","**We're in beta.** Version 1.4.0 will be published here automatically on **8 November 2026**, and it's coming soon to **Google Play**.","🎉 ScanPro 1.4.0 is here!","🌸 What it can do",["📷 **Google AI scanner**: better focus and edge detection, offline","🌍 **15 languages** with options for each country (dates, currency, paper size, ID names)","📄 **PDF tools**: split, compress, password, watermark, page numbers","✍️ **Sign**, write, highlight, strike out and stamp","🔤 **Text recognition (OCR)**, translate, read aloud and dictate","🧠 **Ask your documents**, contract review and form filling","🗂️ **Life folders** with expiry reminders, expenses and inventory","🎓 Summaries and study cards, PowerPoint and Word","📥 Opens PDF, Word, Excel, PowerPoint, EPUB, ZIP, HEIC, TIFF and more","👋 Welcome screen, step-by-step guides, sounds and haptic feedback"],"⬇️ Installation",["Go to **[Releases](../../releases/latest)** and download the **APK**.","Open it on your phone.","If Android asks, allow **“Install unknown apps”**.","Done! Open **ScanPro** and choose your language 👋"],"🔒 Privacy",["📴 **Works offline**","🏠 Your photos and documents **never leave your phone**","🙅 **No accounts or analytics**; sometimes a short ad when exporting","📷 The camera only turns on when you tap **“Take photo”**"],"made with 💜 in Colombia"],
@@ -80,7 +98,11 @@ def page(c, t):
 
 <img src="countdown.svg" alt="ScanPro 1.4.0" width="100%">
 
-<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="44"></a>
+{L[c][0]}
+
+<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="52"></a>
+
+<sub>{L[c][1]}</sub>
 
 </div>
 LISTO-->

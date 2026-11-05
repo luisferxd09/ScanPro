@@ -70,7 +70,11 @@
 
 <img src="countdown.svg" alt="ScanPro 1.4.0" width="100%">
 
-<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="44"></a>
+**نزّلها مجانًا اليوم** · 📷 ماسح Google بالذكاء الاصطناعي · 🎡 عجلة VIP · 🔄 تحديثات تلقائية · 📄 أدوات PDF · 🖼️ إزالة الخلفية · 👋 15 لغة
+
+<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="52"></a>
+
+<sub>التثبيت في 3 خطوات: نزّل ملف APK → افتحه → اسمح بـ «تثبيت التطبيقات غير المعروفة». بلا حسابات ويعمل دون إنترنت.</sub>
 
 </div>
 LISTO-->

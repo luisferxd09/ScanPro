@@ -68,7 +68,11 @@
 
 <img src="countdown.svg" alt="ScanPro 1.4.0" width="100%">
 
-<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="44"></a>
+**Скачайте бесплатно сегодня** · 📷 Сканер Google с ИИ · 🎡 VIP-рулетка · 🔄 Автообновления · 📄 Инструменты PDF · 🖼️ Удаление фона · 👋 15 языков
+
+<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="52"></a>
+
+<sub>Установка в 3 шага: скачайте APK → откройте → разрешите «Установку неизвестных приложений». Без аккаунтов и работает офлайн.</sub>
 
 </div>
 LISTO-->

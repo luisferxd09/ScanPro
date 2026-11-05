@@ -68,7 +68,11 @@
 
 <img src="countdown.svg" alt="ScanPro 1.4.0" width="100%">
 
-<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="44"></a>
+**आज ही मुफ़्त डाउनलोड करें** · 📷 Google AI स्कैनर · 🎡 VIP रूलेट · 🔄 ऑटोमैटिक अपडेट · 📄 PDF टूल · 🖼️ बैकग्राउंड हटाएँ · 👋 15 भाषाएँ
+
+<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="52"></a>
+
+<sub>3 चरणों में इंस्टॉल करें: APK डाउनलोड करें → खोलें → “अज्ञात ऐप इंस्टॉल करें” की अनुमति दें। बिना खाता, बिना इंटरनेट काम करता है।</sub>
 
 </div>
 LISTO-->

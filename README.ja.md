@@ -68,7 +68,11 @@
 
 <img src="countdown.svg" alt="ScanPro 1.4.0" width="100%">
 
-<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="44"></a>
+**今日すぐ無料ダウンロード** · 📷 Google の AI スキャナー · 🎡 VIP ルーレット · 🔄 自動アップデート · 📄 PDF ツール · 🖼️ 背景の削除 · 👋 15 言語
+
+<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="52"></a>
+
+<sub>3 ステップでインストール：APK をダウンロード → 開く →「不明なアプリのインストール」を許可。アカウント不要、オフラインで動作。</sub>
 
 </div>
 LISTO-->

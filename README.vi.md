@@ -68,7 +68,11 @@
 
 <img src="countdown.svg" alt="ScanPro 1.4.0" width="100%">
 
-<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="44"></a>
+**Tải miễn phí ngay hôm nay** · 📷 Máy quét Google AI · 🎡 Vòng quay VIP · 🔄 Tự động cập nhật · 📄 Công cụ PDF · 🖼️ Xóa nền · 👋 15 ngôn ngữ
+
+<a href="../../releases/latest"><img src="https://img.shields.io/badge/⬇_ScanPro_1.4.0-8c7cf7?style=for-the-badge" alt="ScanPro 1.4.0" height="52"></a>
+
+<sub>Cài đặt trong 3 bước: tải APK → mở ra → cho phép «Cài ứng dụng không rõ nguồn». Không cần tài khoản và hoạt động offline.</sub>
 
 </div>
 LISTO-->
